@@ -114,6 +114,8 @@ test('Tangle.getMaxDepth', (t) => {
 test('Tangle.topoSort', (t) => {
   const sorted = tangle.topoSort()
 
+  console.log('sorted', sorted)
+
   t.deepEquals(sorted, [
     rootPost,
     reply1Lo,
